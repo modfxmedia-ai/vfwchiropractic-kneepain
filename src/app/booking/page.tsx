@@ -41,7 +41,7 @@ export default function BookingPage() {
             <img
               src="/images/logo.png"
               alt="Vital Flow Wellness Chiropractic"
-              className="h-10 w-auto"
+              className="h-16 w-auto sm:h-20"
             />
           </Link>
           <a
