@@ -76,7 +76,7 @@ export default function PRPSection() {
   return (
     <section
       id="prp"
-      className="relative overflow-hidden bg-gradient-to-br from-[#07407D] via-[#0a2d5c] to-[#082244] py-24 text-white"
+      className="relative overflow-hidden bg-gradient-to-br from-[#07407D] via-[#0a2d5c] to-[#082244] py-14 text-white sm:py-20 lg:py-24"
     >
       {/* background motion graphics */}
       <div className="pointer-events-none absolute inset-0">
@@ -89,13 +89,13 @@ export default function PRPSection() {
         <div className="absolute right-1/4 top-1/3 h-56 w-56 rounded-full bg-[#0C5D98]/20 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-6">
+      <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
         {/* Header */}
         <div className="text-center">
           <div className="flex justify-center">
             <SectionLabel>Primary Treatment, Regenerative Medicine</SectionLabel>
           </div>
-          <h2 className="mt-4 text-4xl font-bold sm:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold sm:text-4xl lg:text-5xl">
             PRP Therapy for Joint &amp; Knee Pain
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-[#9FE4EC]">

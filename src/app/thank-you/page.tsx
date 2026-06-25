@@ -32,21 +32,22 @@ const fadeInUp: Variants = {
 export default function ThankYouPage() {
   return (
     <>
-      {/* Minimal sticky header */}
-      <header className="sticky top-0 z-50 bg-white px-8 py-4 shadow-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <Link href="/">
+      {/* Minimal header, sticky only on desktop */}
+      <header className="relative z-50 bg-white px-4 py-3 shadow-sm sm:px-8 sm:py-4 lg:sticky lg:top-0">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3">
+          <Link href="/" className="shrink-0">
             <img
               src="/images/logo.png"
               alt="Vital Flow Wellness Chiropractic"
-              className="h-16 w-auto sm:h-20"
+              className="h-12 w-auto sm:h-20"
             />
           </Link>
           <a
             href="tel:+17342126703"
-            className="text-sm font-semibold text-[#07407D] hover:text-[#0C5D98]"
+            className="text-right text-xs font-semibold text-[#07407D] hover:text-[#0C5D98] sm:text-sm"
           >
-            (734) 212-6703, Call or Text
+            <span className="hidden sm:inline">(734) 212-6703, Call or Text</span>
+            <span className="sm:hidden">(734) 212-6703</span>
           </a>
         </div>
       </header>

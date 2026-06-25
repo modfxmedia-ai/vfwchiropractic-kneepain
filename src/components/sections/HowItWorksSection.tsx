@@ -47,12 +47,12 @@ const circlePop = {
 
 export default function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="bg-[#F0F9FA] py-20">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="how-it-works" className="bg-[#F0F9FA] py-14 sm:py-20">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         {/* Header */}
         <div className="text-center">
           <SectionLabel>Your Path Forward</SectionLabel>
-          <h2 className="mt-4 text-[44px] font-bold leading-tight text-[#07407D]">
+          <h2 className="mt-4 text-[1.8rem] font-bold leading-tight text-[#07407D] sm:text-[2.25rem] lg:text-[44px]">
             What Happens at Your $49 Consultation
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-gray-600">
@@ -96,7 +96,7 @@ export default function HowItWorksSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mt-12 max-w-4xl rounded-2xl bg-[#0C5D98] px-8 py-8 text-center"
+          className="mx-auto mt-12 max-w-4xl rounded-2xl bg-[#0C5D98] px-6 py-8 text-center sm:px-8"
         >
           <p className="text-lg font-medium text-white">
             Everything above, for just $49. Spots are limited to 10 new

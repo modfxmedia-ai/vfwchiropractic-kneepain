@@ -59,7 +59,7 @@ export default function LocationMapSection() {
   return (
     <section
       id="location"
-      className="relative overflow-hidden bg-gradient-to-b from-white to-[#F4F7FA] py-24"
+      className="relative overflow-hidden bg-gradient-to-b from-white to-[#F4F7FA] py-14 sm:py-20 lg:py-24"
     >
       {/* background motion graphics */}
       <div className="pointer-events-none absolute inset-0">
@@ -67,7 +67,7 @@ export default function LocationMapSection() {
         <div className="absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-[#0C5D98]/5 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-6">
+      <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
         {/* Header */}
         <div className="flex flex-col items-center text-center">
           <SectionLabel>Visit Our Clinic</SectionLabel>

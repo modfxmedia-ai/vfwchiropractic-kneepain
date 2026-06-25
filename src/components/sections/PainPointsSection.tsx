@@ -37,16 +37,18 @@ const fadeInRight: Variants = {
 
 export default function PainPointsSection() {
   return (
-    <section className="relative overflow-hidden bg-[#F4F7FA] py-24">
+    <section className="relative overflow-hidden bg-[#F4F7FA] py-14 sm:py-20 lg:py-24">
       {/* background accents */}
       <div className="pointer-events-none absolute -right-24 top-10 h-72 w-72 rounded-full bg-[#3EC2D1]/10 blur-3xl" />
       <div className="pointer-events-none absolute -left-24 bottom-0 h-72 w-72 rounded-full bg-[#07407D]/5 blur-3xl" />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-2">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-5 sm:px-6 lg:grid-cols-2">
         {/* LEFT COLUMN */}
-        <div>
-          <SectionLabel>Sound Familiar?</SectionLabel>
-          <h2 className="mt-4 text-[2.25rem] font-bold leading-tight text-[#07407D] sm:text-[2.6rem]">
+        <div className="text-center lg:text-left">
+          <div className="flex justify-center lg:justify-start">
+            <SectionLabel>Sound Familiar?</SectionLabel>
+          </div>
+          <h2 className="mt-4 text-[1.8rem] font-bold leading-tight text-[#07407D] sm:text-[2.25rem] lg:text-[2.6rem]">
             Does Any of This Sound Like You?
           </h2>
 
@@ -62,7 +64,7 @@ export default function PainPointsSection() {
                 key={point}
                 variants={cardItem}
                 whileHover={{ x: 6 }}
-                className="group flex items-start gap-4 rounded-xl border border-gray-100 bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
+                className="group flex items-start gap-4 rounded-xl border border-gray-100 bg-white p-4 text-left shadow-sm transition-shadow hover:shadow-md"
               >
                 <span className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-red-50 text-red-500 transition-colors group-hover:bg-red-500 group-hover:text-white">
                   <svg
@@ -89,7 +91,7 @@ export default function PainPointsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-6 flex items-start gap-4 rounded-xl border-l-4 border-[#3EC2D1] bg-white p-5 shadow-sm"
+            className="mt-6 flex items-start gap-4 rounded-xl border-l-4 border-[#3EC2D1] bg-white p-5 text-left shadow-sm"
           >
             <svg
               viewBox="0 0 24 24"
@@ -116,7 +118,7 @@ export default function PainPointsSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="relative"
+          className="relative mt-2 hidden lg:block"
         >
           {/* Decorative offset frame */}
           <div className="absolute -right-4 -top-4 h-full w-full rounded-3xl border-2 border-[#3EC2D1]/30" />

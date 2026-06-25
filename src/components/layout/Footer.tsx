@@ -57,7 +57,7 @@ export default function Footer() {
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" />
               <circle cx="12" cy="10" r="3" />
             </svg>
-            8300 N Lilley Rd, Canton, MI 48187
+            8524 N Canton Center Rd, Canton, MI 48187
           </span>
           <a
             href="tel:+17342126703"

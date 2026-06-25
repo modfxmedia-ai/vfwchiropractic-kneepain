@@ -79,7 +79,7 @@ export default function AdditionalServicesSection() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-gradient-to-b from-[#07407D] via-[#0a2d5c] to-[#082244] py-28 text-white"
+      className="relative overflow-hidden bg-gradient-to-b from-[#07407D] via-[#0a2d5c] to-[#082244] py-14 text-white sm:py-20 lg:py-28"
     >
       {/* background motion graphics */}
       <div className="pointer-events-none absolute inset-0">
@@ -97,7 +97,7 @@ export default function AdditionalServicesSection() {
         <div className="absolute -left-10 bottom-10 h-64 w-64 rounded-full bg-[#0C5D98]/20 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-6">
+      <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
         {/* Header */}
         <div className="text-center">
           <div className="flex justify-center">
@@ -113,7 +113,7 @@ export default function AdditionalServicesSection() {
         </div>
 
         {/* Alternating feature rows */}
-        <div className="mt-20 space-y-20">
+        <div className="mt-14 space-y-16 lg:mt-20 lg:space-y-20">
           {services.map((s, i) => {
             const reversed = i % 2 === 1;
             return (
@@ -178,7 +178,7 @@ export default function AdditionalServicesSection() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className={reversed ? "lg:order-1" : ""}
+                  className={`text-center lg:text-left ${reversed ? "lg:order-1" : ""}`}
                 >
                   <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#3EC2D1] to-[#0C5D98] text-white shadow-lg">
                     <svg

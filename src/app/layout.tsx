@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import MobileStickyCTA from "@/components/ui/MobileStickyCTA";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -35,7 +36,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans pb-[88px] lg:pb-0">
+        {children}
+        <MobileStickyCTA />
+      </body>
     </html>
   );
 }

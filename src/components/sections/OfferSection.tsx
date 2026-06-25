@@ -51,7 +51,7 @@ export default function OfferSection() {
   return (
     <section
       id="offer"
-      className="relative overflow-hidden bg-gradient-to-br from-[#062f5c] via-[#07407D] to-[#292C51] py-28"
+      className="relative overflow-hidden bg-gradient-to-br from-[#062f5c] via-[#07407D] to-[#292C51] py-14 sm:py-20 lg:py-28"
     >
       {/* background motion graphics */}
       <div className="pointer-events-none absolute inset-0">
@@ -87,16 +87,19 @@ export default function OfferSection() {
         ))}
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-16 px-6 lg:grid-cols-2">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 sm:px-6 lg:grid-cols-2 lg:gap-16">
         {/* LEFT, offer breakdown */}
         <motion.div
           variants={fadeInLeft}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
+          className="text-center lg:text-left"
         >
-          <SectionLabel>Limited Time Offer</SectionLabel>
-          <h2 className="mt-4 text-4xl font-bold leading-tight text-white sm:text-5xl">
+          <div className="flex justify-center lg:justify-start">
+            <SectionLabel>Limited Time Offer</SectionLabel>
+          </div>
+          <h2 className="mt-4 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
             Everything You Need to{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-[#3EC2D1] to-[#9FE4EC] bg-clip-text text-transparent">
@@ -164,7 +167,7 @@ export default function OfferSection() {
             ))}
           </motion.ul>
 
-          <div className="mt-6 flex flex-wrap items-center gap-4">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
             <span className="text-sm text-white/60">Total Value</span>
             <span className="text-xl font-bold text-white/50 line-through">
               $430

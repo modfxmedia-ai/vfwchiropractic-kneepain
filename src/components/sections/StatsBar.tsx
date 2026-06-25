@@ -70,12 +70,12 @@ const item: Variants = {
 
 export default function StatsBar() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F0F9FA] to-white py-16">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#F0F9FA] to-white py-12 sm:py-14 lg:py-16">
       {/* subtle background accents */}
       <div className="pointer-events-none absolute -left-20 top-0 h-64 w-64 rounded-full bg-[#3EC2D1]/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-[#07407D]/5 blur-3xl" />
 
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <motion.div
           variants={container}
           initial="hidden"

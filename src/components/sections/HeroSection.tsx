@@ -46,7 +46,7 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[100vh] overflow-hidden bg-[#07407D]"
+      className="relative overflow-hidden bg-[#07407D] lg:min-h-[100vh]"
     >
       {/* BACKGROUND IMAGE + PARALLAX */}
       <motion.div
@@ -87,7 +87,7 @@ export default function HeroSection() {
 
       <motion.div
         style={{ y: contentY }}
-        className="relative mx-auto flex min-h-[100vh] max-w-7xl items-center px-6 pb-24 pt-28 lg:px-10"
+        className="relative mx-auto flex max-w-7xl items-start px-5 pb-16 pt-6 sm:px-6 sm:pb-24 sm:pt-12 lg:min-h-[100vh] lg:items-center lg:px-10 lg:pt-24"
       >
         <div className="grid w-full items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           {/* LEFT COLUMN */}
@@ -95,6 +95,7 @@ export default function HeroSection() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
+            className="text-center lg:text-left"
           >
             <motion.div
               variants={fadeUp}
@@ -143,7 +144,7 @@ export default function HeroSection() {
 
             <motion.p
               variants={fadeUp}
-              className="mt-7 max-w-xl text-lg leading-relaxed text-white/80"
+              className="mx-auto mt-7 max-w-xl text-lg leading-relaxed text-white/80 lg:mx-0"
             >
               Discover what&apos;s actually causing your pain, and get a
               complete{" "}
@@ -156,7 +157,7 @@ export default function HeroSection() {
 
             <motion.div
               variants={fadeUp}
-              className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center"
+              className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start"
             >
               <Link
                 href="/booking"
@@ -196,7 +197,7 @@ export default function HeroSection() {
 
             <motion.div
               variants={fadeUp}
-              className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-white/75"
+              className="mt-9 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm font-medium text-white/75 lg:justify-start"
             >
               <span className="flex items-center gap-2">
                 <span className="flex text-[#FFC94D]">
@@ -284,7 +285,7 @@ export default function HeroSection() {
                     $49
                   </span>
                   <span className="pb-2 text-sm text-white/60 line-through">
-                    $249
+                    $430
                   </span>
                 </div>
 
@@ -334,7 +335,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6 }}
-        className="absolute bottom-16 left-1/2 -translate-x-1/2"
+        className="absolute bottom-16 left-1/2 hidden -translate-x-1/2 lg:block"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
@@ -346,7 +347,7 @@ export default function HeroSection() {
       </motion.div>
 
       {/* BOTTOM TRUST BAR */}
-      <div className="absolute inset-x-0 bottom-0 border-t border-white/10 bg-[#07407D]/70 backdrop-blur-md">
+      <div className="absolute inset-x-0 bottom-0 hidden border-t border-white/10 bg-[#07407D]/70 backdrop-blur-md sm:block">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-center divide-white/15 px-6 py-3 text-center text-sm font-medium text-white sm:flex-row sm:divide-x">
           <span className="px-4 py-1">5.0 Google Reviews</span>
           <span className="px-4 py-1">$49 Complete Consultation</span>

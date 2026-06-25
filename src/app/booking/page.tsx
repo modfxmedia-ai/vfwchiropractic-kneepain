@@ -34,27 +34,28 @@ const fadeInLeft: Variants = {
 export default function BookingPage() {
   return (
     <div className="min-h-screen bg-[#F4F7FA]">
-      {/* Minimal sticky header */}
-      <header className="sticky top-0 z-50 bg-white px-8 py-4 shadow-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <Link href="/">
+      {/* Minimal header, sticky only on desktop */}
+      <header className="relative z-50 bg-white px-4 py-3 shadow-sm sm:px-8 sm:py-4 lg:sticky lg:top-0">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3">
+          <Link href="/" className="shrink-0">
             <img
               src="/images/logo.png"
               alt="Vital Flow Wellness Chiropractic"
-              className="h-16 w-auto sm:h-20"
+              className="h-12 w-auto sm:h-20"
             />
           </Link>
           <a
             href="tel:+17342126703"
-            className="text-sm font-semibold text-[#07407D] hover:text-[#0C5D98]"
+            className="text-right text-xs font-semibold text-[#07407D] hover:text-[#0C5D98] sm:text-sm"
           >
-            (734) 212-6703, Call or Text
+            <span className="hidden sm:inline">(734) 212-6703, Call or Text</span>
+            <span className="sm:hidden">(734) 212-6703</span>
           </a>
         </div>
       </header>
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#07407D] via-[#0a2d5c] to-[#292C51] py-16 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#07407D] via-[#0a2d5c] to-[#292C51] py-12 text-white sm:py-16">
         {/* background motion graphics */}
         <div className="pointer-events-none absolute inset-0">
           <motion.span
@@ -66,7 +67,7 @@ export default function BookingPage() {
           <div className="absolute -left-10 bottom-0 h-64 w-64 rounded-full bg-[#0C5D98]/20 blur-3xl" />
         </div>
 
-        <div className="relative mx-auto max-w-6xl px-6 text-center">
+        <div className="relative mx-auto max-w-6xl px-5 text-center sm:px-6">
           <motion.span
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -85,7 +86,7 @@ export default function BookingPage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mx-auto mt-5 max-w-3xl text-4xl font-bold leading-tight sm:text-5xl"
+            className="mx-auto mt-5 max-w-3xl text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl"
           >
             Book Your{" "}
             <span className="bg-gradient-to-r from-[#3EC2D1] to-[#9FE4EC] bg-clip-text text-transparent">
@@ -107,7 +108,7 @@ export default function BookingPage() {
       </section>
 
       {/* BOOKING CONTENT */}
-      <main className="relative mx-auto -mt-10 max-w-6xl px-4 pb-20">
+      <main className="relative mx-auto -mt-8 max-w-6xl px-4 pb-16 sm:-mt-10 sm:pb-20">
         <div className="grid gap-8 lg:grid-cols-[1fr_360px]">
           {/* LEFT, Calendar */}
           <motion.div

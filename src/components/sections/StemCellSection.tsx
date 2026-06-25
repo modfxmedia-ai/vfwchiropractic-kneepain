@@ -151,7 +151,7 @@ export default function StemCellSection() {
   return (
     <section
       id="stem-cell"
-      className="relative overflow-hidden bg-gradient-to-b from-white to-[#F4F7FA] py-24"
+      className="relative overflow-hidden bg-gradient-to-b from-white to-[#F4F7FA] py-14 sm:py-20 lg:py-24"
     >
       {/* background motion graphics */}
       <div className="pointer-events-none absolute inset-0">
@@ -163,21 +163,21 @@ export default function StemCellSection() {
         <div className="absolute -right-24 top-40 h-72 w-72 rounded-full bg-[#3EC2D1]/10 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-6">
+      <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
         {/* Header */}
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="max-w-3xl"
+          className="mx-auto max-w-3xl text-center lg:mx-0 lg:text-left"
         >
-          <motion.div variants={fadeInLeft}>
+          <motion.div variants={fadeInLeft} className="flex justify-center lg:justify-start">
             <SectionLabel>Advanced Regenerative Treatment</SectionLabel>
           </motion.div>
           <motion.h2
             variants={fadeInLeft}
-            className="mt-4 text-[2.5rem] font-bold leading-[1.1] text-[#07407D] sm:text-[2.9rem]"
+            className="mt-4 text-[1.85rem] font-bold leading-[1.15] text-[#07407D] sm:text-[2.5rem] lg:text-[2.9rem]"
           >
             Stem Cell Therapy:{" "}
             <span className="bg-gradient-to-r from-[#3EC2D1] to-[#0C5D98] bg-clip-text text-transparent">

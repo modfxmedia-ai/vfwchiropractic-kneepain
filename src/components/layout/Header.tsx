@@ -18,7 +18,7 @@ export default function Header() {
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="sticky top-0 z-50"
+      className="relative z-50 lg:sticky lg:top-0"
     >
       {/* Announcement bar */}
       <div className="flex h-10 items-center justify-center bg-[#3EC2D1] px-4 text-center text-xs font-medium text-white sm:text-sm">
@@ -46,29 +46,29 @@ export default function Header() {
           scrolled ? "shadow-lg" : "shadow-none"
         )}
       >
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-4 sm:flex-row sm:justify-between">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2 sm:gap-4 sm:px-6 sm:py-4">
           {/* Logo */}
           <Link href="/" className="shrink-0">
             <img
               src="/images/logo.png"
               alt="Vital Flow Wellness Chiropractic"
-              className="h-16 w-auto sm:h-20"
+              className="h-10 w-auto sm:h-16 lg:h-20"
             />
           </Link>
 
           {/* Right side, phone + CTA button */}
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
+          <div className="flex items-center gap-3 sm:gap-6">
             {/* Phone number */}
             <a
               href="tel:+17342126703"
-              className="group flex items-center gap-3"
+              className="group flex items-center gap-2 sm:gap-3"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#3EC2D1]/15 text-[#0C5D98] transition-colors group-hover:bg-[#3EC2D1] group-hover:text-white">
-                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#3EC2D1]/15 text-[#0C5D98] transition-colors group-hover:bg-[#3EC2D1] group-hover:text-white sm:h-11 sm:w-11">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 sm:h-5 sm:w-5">
                   <path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02l-2.2 2.2Z" />
                 </svg>
               </span>
-              <span className="text-left leading-tight">
+              <span className="hidden text-left leading-tight sm:block">
                 <span className="block text-xs font-medium text-gray-500">
                   Call or Text
                 </span>
@@ -76,10 +76,13 @@ export default function Header() {
                   (734) 212-6703
                 </span>
               </span>
+              <span className="text-sm font-bold text-[#07407D] sm:hidden">
+                (734) 212-6703
+              </span>
             </a>
 
-            {/* CTA button with badge */}
-            <div className="relative">
+            {/* CTA button with badge, hidden until lg since sticky bottom CTA handles small screens */}
+            <div className="relative hidden lg:block">
               <span className="absolute -right-2 -top-2 z-10 rounded-full bg-red-500 px-2 py-0.5 text-xs font-semibold text-white">
                 LIMITED SPOTS
               </span>
