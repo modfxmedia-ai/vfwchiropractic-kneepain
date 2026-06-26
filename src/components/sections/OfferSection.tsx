@@ -15,7 +15,7 @@ const breakdown = [
 const cardLines = [
   "Full Exam",
   "X-Rays Included",
-  "Doctor's Report",
+  "Doctor's Report of Findings",
   "FREE Laser Treatment",
 ];
 

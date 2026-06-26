@@ -9,7 +9,7 @@ import ReviewsShowcase from "@/components/ui/ReviewsShowcase";
 const offerCardLines = [
   "Comprehensive Exam",
   "Diagnostic X-Rays",
-  "Doctor's Report",
+  "Doctor's Report of Findings",
   "FREE Laser Treatment",
 ];
 

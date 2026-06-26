@@ -28,7 +28,7 @@ const fadeUp: Variants = {
 const offerBullets = [
   "Full physical exam",
   "Digital X-rays on-site",
-  "Personal doctor's report",
+  "Personal doctor's report of findings",
   "FREE laser treatment",
 ];
 
@@ -151,7 +151,7 @@ export default function HeroSection() {
               <span className="font-semibold text-[#9FE4EC]">
                 $49 consultation
               </span>{" "}
-              including exam, X-rays, doctor&apos;s report,{" "}
+              including exam, X-rays, doctor&apos;s report of findings,{" "}
               <span className="italic">and a free laser treatment.</span>
             </motion.p>
 

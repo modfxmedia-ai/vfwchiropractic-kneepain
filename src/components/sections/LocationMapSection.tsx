@@ -31,7 +31,7 @@ const details = [
   },
   {
     title: "Office Hours",
-    body: "Mon–Fri: 9:00 AM – 6:00 PM\nSat: By Appointment",
+    body: "Mon, Wed, Thu: 8 AM–12 PM, 3–6 PM\nTue: 3–6:30 PM\nFri–Sun: Closed",
     icon: (
       <>
         <circle cx="12" cy="12" r="9" />

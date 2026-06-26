@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title:
     "Joint & Knee Pain Relief Canton MI | $49 Consultation | Vital Flow Wellness",
   description:
-    "Get a complete joint pain consultation in Canton, MI for just $49, includes exam, X-rays, doctor's report, and a FREE laser treatment. PRP & stem cell therapy specialists.",
+    "Get a complete joint pain consultation in Canton, MI for just $49, includes exam, X-rays, doctor's report of findings, and a FREE laser treatment. PRP & stem cell therapy specialists.",
 };
 
 export default function RootLayout({

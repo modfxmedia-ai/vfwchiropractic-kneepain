@@ -16,7 +16,7 @@ const steps = [
   },
   {
     title: "Come In & Get Answers",
-    body: "Your comprehensive exam, X-rays, and doctor's report are all waiting for you. This is the appointment that changes everything.",
+    body: "Your comprehensive exam, X-rays, and doctor's report of findings are all waiting for you. This is the appointment that changes everything.",
   },
 ];
 
